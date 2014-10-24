@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<html lang="en">
+	<head>
+    <link rel="stylesheet" type="text/css" href="/css/feed.css">
+    <script src="js/feed.js" type="application/javascript"></script>
+	<body>
+        <header>
+        <img src="images/logo.png" id="logo" style="width:92px;height:92px" />
+        <h1 class="padding"> My Book</h1>
+        <nav>
+            <a href="#" id="menu-icon"></a>
+            <img src="images/signout_icon.png" id="icon" style="width:52px;height:52px" />
+            </nav>
+        </header>
+    <div id="nav">
+        <ul class="nav-text">
+            <li class="divider">
+                <li><a href="feed.html" >Feed</a></li>
+                <li><a href="profile.html">Profile</a></li>
+            </li>
+        </ul>
+    </div>
+        <div id="container">
+        <form id="profileform">
+            <input class ="text2" type="age" placeholder="Name"></input></br></br>
+            <input class ="text2" type="age" placeholder="Age"></input></br></br>
+            <input class ="text2" type="phone" placeholder="PhoneNo"></input></br></br>
+            <input class ="text2" type="email" placeholder="Email"></input></br></br>
+            <textarea rows="4" cols="30"></textarea>
+            <input class ="text2" type="hidden" id="image-value" name="selected_image" value="" /></br></br>
+            <input class ="text2" type="file" onchange="preview(this)" name="file"></br></br>
+            <input class="submit" type="submit" name="button" id="button" value="Save" />
+        </form>
+        <div>
+            <img id="imgtest" style="width:92px;height:92px"/>
+        </div>
+        </div>
+        <div>
+            <footer class="footer-below">
+                <div class="footer-text" id="footertext">Talent Improving exercise, OFS</div>
+            </footer>
+        </div>
+	</body>
+</html>
