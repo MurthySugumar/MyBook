@@ -4,13 +4,14 @@
 	<head>
     <link rel="stylesheet" type="text/css" href="/css/feed.css">
     <script src="js/feed.js" type="application/javascript"></script>
+    </head>
 	<body>
         <header>
-        <img src="images/logo.png" id="logo" style="width:92px;height:92px" />
-        <h1 class="padding"> My Book</h1>
+        <img src="images/logo.png" id="logo" style="width:82px;height:82px" />
+        <h1 class="padding">Angular Book</h1>
         <nav>
             <a href="#" id="menu-icon"></a>
-            <img src="images/signout_icon.png" id="icon" style="width:52px;height:52px" />
+            <img src="images/signout_icon.png" id="icon" style="width:32px;height:32px" onClick="logout()"/>
             </nav>
         </header>
     <div id="nav">
@@ -21,23 +22,22 @@
             </li>
         </ul>
     </div>
+        <div id="previewImage">
+            <img id="thumbnil" src="images/preview.png"style="width:152px;height:229px"/>
+        </div>
         <div id="container">
-        <form id="profileform">
-            <input class ="text2" type="age" placeholder="Name"></input></br></br>
-            <input class ="text2" type="age" placeholder="Age"></input></br></br>
-            <input class ="text2" type="phone" placeholder="PhoneNo"></input></br></br>
-            <input class ="text2" type="email" placeholder="Email"></input></br></br>
-            <textarea rows="4" cols="30"></textarea>
-            <input class ="text2" type="hidden" id="image-value" name="selected_image" value="" /></br></br>
-            <input class ="text2" type="file" onchange="preview(this)" name="file"></br></br>
-            <input class="submit" type="submit" name="button" id="button" value="Save" />
-        </form>
-        <div>
-            <img id="imgtest" style="width:92px;height:92px"/>
+            <form id="profileform">
+                <input id="name" type="name" placeholder="Name" required></input></br></br>
+                <input id="age" type="number" placeholder="Age"></input></br></br>
+                <input id="phoneno" type="phone" placeholder="PhoneNo"></input></br></br>
+                <input id="email" type="email" placeholder="Email" required></input></br></br>
+                <textarea id="description" rows="4" cols="30"></textarea></br></br>
+                <input  id="imagefile" type="file" accept="image/*" onchange="showMyImage(this)" name="file" required></br></br>
+                <input class="submit" type="submit" name="button" id="button" value="Save" onclick='storeProfile()'/>
+                </form>
         </div>
-        </div>
-        <div>
-            <footer class="footer-below">
+        <div id="footer">
+            <footer>
                 <div class="footer-text" id="footertext">Talent Improving exercise, OFS</div>
             </footer>
         </div>

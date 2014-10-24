@@ -20,4 +20,5 @@ function validate() {
     } else {
         alert( "Please enter your valid username and password.." );
     }
+
 }

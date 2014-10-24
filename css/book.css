@@ -77,3 +77,10 @@ div.footer-text {
     background: #fff;
     color:#18bc9c;
 }
+#footer {
+    background-color: #233140;
+    color:white;
+    clear:both;
+    text-align:center;
+    padding: 25px 0;
+}
