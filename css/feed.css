@@ -48,10 +48,11 @@ h1 {
 }
 #icon {
     float:right;
-    padding-top:12px;
+    padding-top:22px;
     padding-right: 20px;
     color: #FFF;
     background: url(images/signout_icon.png) no-repeat center;
+    cursor: pointer;
 }
 #nav {
     line-height:30px;
@@ -80,7 +81,8 @@ padding-top: 50px;
 #section {
     width:950px;
     float:left;
-    padding:100px;
+    padding-top:100px;
+    padding-left: 150px;
 }
 #section1 {
     float:left;
@@ -108,7 +110,7 @@ input[type="text"] {
 }
 .submit {
     border: 2px #fff;
-    padding: 13px 20px;
+    padding: 7px 20px;
     background: #18bc9c;
     width: 85px;
     border-radius: 10px;
@@ -116,7 +118,8 @@ input[type="text"] {
     cursor: pointer;
 }
 .submit:hover{
-     background: #383;
+     background: #fff;
+    color: #000;
 }
 .hidden {
         display: none;
@@ -129,8 +132,6 @@ input[type="text"] {
     margin: 0 auto;
     width:250px;
 }
-
-
 textarea {
     vertical-align: top;
     height: 5em;
@@ -150,4 +151,58 @@ input, textarea {
     width: 300px;
     box-shadow: 0 0 27px rgb(204, 204, 204) inset;
     padding: 3px 3px 3px 3px;
+}
+#previewImage {
+    float: right;
+    padding-top: 150px;
+    padding-right: 150px;
+}
+#text{
+    width:800px;
+    height:auto;
+    background-color:#233140;
+}
+#url{
+    width:800px;
+    height:auto;
+    background-color:#18bc9c;
+}
+#footer {
+    background-color: #233140;
+    color:white;
+    clear:both;
+    text-align:center;
+    padding: 25px 0;
+}
+#userImage {
+    width:75px;
+    height:75px;
+    padding: 10px;
+}
+
+#closeBtn {
+    width:25px;
+    height:25px;
+    float:right;
+    padding-top:10px;
+    padding-right:10px;
+    cursor: pointer;
+}
+#feedTime {
+    float:right;
+    padding-top:50px;
+    padding-right:10px;
+    color: #fff;
+}
+#feedValues {
+    color: #fff;
+    font-size: 120%;
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    padding-left: 10px;
+}
+#listofpost {
+    padding-left: 110px;
+
 }

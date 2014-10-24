@@ -2,16 +2,16 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <html lang="en">
 	<head>
-    <link rel="stylesheet" type="text/css" href="/css/index.css">
     <link rel="stylesheet" type="text/css" href="/css/feed.css">
     <script src="js/feed.js" type="application/javascript"></script>
+        <
 	<body>
         <header>
-        <img src="images/logo.png" id="logo" style="width:92px;height:92px" />
-        <h1 class="padding"> My Book</h1>
+        <img src="images/logo.png" id="logo" style="width:82px;height:82px" />
+        <h1 class="padding">Angular Book</h1>
         <nav>
             <a href="#" id="menu-icon"></a>
-            <img src="images/signout_icon.png" id="icon" style="width:52px;height:52px" />
+            <img src="images/signout_icon.png" id="icon" style="width:32px;height:32px" onClick="logout()"/>
             </nav>
         </header>
     <div id="nav">
@@ -23,21 +23,18 @@
         </ul>
     </div>
         <div>
-        <div id="one">
-        <div id="section">
-            <input id="feedArea" class="text1" type="text" value="" placeholder="Text feed or URL feed"/>
-             <input class="submit" type="submit" name="button" id="button" value="Submit" onclick='addNewItem()'/>
-        </div>
-        <div id="section1">
-        <ol id="listItems"></ol>
-        </div>
+            <div id="one">
+                <div id="section">
+                    <input id="feedArea" class="text1" type="text" value="" placeholder="Text feed or URL feed"/>
+                    <input class="submit" type="submit" name="button" id="button" value="Submit" onclick='addFeed()'/>
+                </div>
+                <div id="section1">
+                    <ul id="feedList" style="list-style-type:none"></ul>
+                </div>
             </div>
-         <div id="two">
-             <span>hai</span>
         </div>
-        </div>
-        <div>
-            <footer class="footer-below">
+        <div id="footer">
+            <footer>
                 <div class="footer-text" id="footertext">Talent Improving exercise, OFS</div>
             </footer>
         </div>
